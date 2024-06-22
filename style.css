@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "kanit", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  inline-size: 100%;
+  block-size: 100vh;
+  background-color: #e9c287;
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  inline-size: 100%;
+  block-size: 150%;
+  background-color: #eee;
+  border-start-start-radius: 50%;
+  border-end-start-radius: 50%;
+  transform: translate(20%, -50%) rotateZ(15deg);
+}
+
+.form-wrapper {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 70%;
+  block-size: 80%;
+  background-color: #252527;
+  border-radius: 2rem;
+  box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.form-wrapper img {
+  inline-size: 140rem;
+  position: absolute;
+  inset-inline-start: -50%;
+  inset-block-start: -20%;
+  opacity: 0.5;
+}
+
+.form-heading {
+  position: absolute;
+  inset-block-start: 19%;
+  inset-inline-start: 35%;
+  font-family: "Tilt Prism", cursive;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #fff;
+  inline-size: 35rem;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+  inline-size: 35%;
+  block-size: 100%;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 7rem;
+  padding-inline-start: 10rem;
+  padding-inline-end: 7rem;
+}
+
+.toggle-links {
+  text-align: right;
+}
+
+.toggle-link,
+.toggle-links span {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #e9c287;
+  cursor: pointer;
+}
+
+.toggle-links span {
+  margin-inline: 0.5rem;
+}
+
+.change .signin {
+  color: #b89663;
+}
+
+.signup {
+  color: #b89663;
+}
+
+.chang .signup {
+  color: #e9c287;
+}
+
+.inputs {
+  margin-block-start: -2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  inline-size: 100%;
+  block-size: 5rem;
+  margin-block: 1rem;
+  padding: 1rem;
+  background-color: #343539;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #eee;
+}
+
+.change .hide {
+  display: none;
+}
+
+.change .display {
+  transform: translateY(-6rem);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+
+.checkbox input {
+  appearance: none;
+  inline-size: 2rem;
+  block-size: 2rem;
+  background-color: #3a3a3c;
+  margin-inline-end: 1rem;
+  border-radius: 0.2rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.checkbox input,
+.checkbox label {
+  cursor: pointer;
+}
+
+.checkbox input:checked {
+  background-color: #b58235;
+}
+
+.checkbox input::after {
+  content: "";
+  position: absolute;
+  inset-block-start: -15%;
+  inset-inline-start: 20%;
+  inline-size: 50%;
+  block-size: 75%;
+  border-inline-end: 0.2rem solid #fff;
+  border-block-end: 0.2rem solid #fff;
+  transform: rotateZ(45deg);
+
+  /* hiding it */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.checkbox input:checked::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.checkbox label {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.checkbox label strong {
+  color: #b58235;
+}
+
+.submit {
+  inline-size: 100%;
+  block-size: 5rem;
+  background-color: #d48142;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  margin-block: -4rem;
+}
+
+.submit:active {
+  transform: translateY(0.2rem);
+}
+
+.change .submit {
+  transform: translateY(-12rem);
+}
+
+.change .submit:active {
+  transform: translateY(-12.8rem);
+}
+
+.social-media {
+  inline-size: 100%;
+  padding-block-start: 1rem;
+  padding-inline-end: 40%;
+  display: flex;
+  justify-content: space-between;
+  border-block-start: 0.1rem solid rgba(255, 255, 255, 0.2);
+  transform: translateY(3rem);
+}
+
+.social-media i {
+  inline-size: 3rem;
+  block-size: 3rem;
+  background-color: #939695;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #3a3a3c;
+  cursor: pointer;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign In or up form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background"></div>
+      <div class="form-wrapper">
+        <img src="images/pexels-photo-23193134 without background.png" />
+        <h1 class="form-heading">Fill The Form and Become a Part of Team</h1>
+        <form class="contact-form">
+          <p class="toggle-links">
+            <a href="#" class="toggle-link signup">Sign Up</a>
+            <span>/</span>
+            <a href="#" class="toggle-link signin">Sign In</a>
+          </p>
+          <section class="inputs">
+            <input
+              type="text"
+              class="input-field hide"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              class="input-field hide"
+              placeholder="Last Name"
+            />
+            <input
+              type="email"
+              class="input-field display"
+              placeholder="Email Address"
+            />
+            <input
+              type="password"
+              class="input-field display"
+              placeholder="Password"
+            />
+            <div class="checkbox hide">
+              <!-- connecting a label and input using id -->
+              <input type="checkbox" id="check" />
+              <label for="check"
+                >I agree <strong>Terms of Service</strong>
+              </label>
+            </div>
+          </section>
+          <button type="button" class="submit">Sign Up</button>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
